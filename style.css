@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+.container{
+    width: 400px;
+    height: min-content;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 28px;
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: min-content;
+    
+}
+.search input{
+     padding: 10px 20px;
+     border-radius: 12px;
+     background-color: #e6f5fb;
+     color: black;
+     text-transform: capitalize;
+     font-size: 16px;
+     border: none;
+     
+}
+.search button{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: #e6f5fb;
+    font-size: 15px;
+}
+.search button:hover{
+    background-color: #759dad7c;
+    color: #fff;
+}
+
+.weatherBody{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 20px;
+    /* display: none; */
+
+
+}
+.weatherBody img{
+    width: 60%;
+    
+}
+.parameters{
+    text-align: center;
+    text-transform: capitalize;
+    
+    margin-block: 20px;
+}
+.parameters .temperature{
+   position: relative;
+   font-size: 40px;
+}
+.parameters .temperature sup{
+    position: absolute;
+    font-size: 20px;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px;
+}
+.humidity , .wind{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+.details i{
+    font-size: 30px;
+}
+.not-found{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    display: none;
+} 
+
+.not-found img{
+    width: 80%;
+}
